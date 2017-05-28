@@ -18,11 +18,25 @@ void GetCipherMaxLen(char acCipherContent[], int *piCipherLen)
 
     *piCipherLen = cipherContentLen;
 
-    for(int i = 1; i < cipherContentLen; i++)
+    //TODO 从大到小降序比较
+    for(int i = cipherContentLen; i > 1; i--)
     {
-        if(acCipherContent[i-1] == acCipherContent[i+1])
-            *piCipherLen = i+2;
+        for(int j = 0; j < cipherContentLen - i; j++)
+        {
+            char* chTemp;
+            memcpy(chTemp, &acCipherContent[j], i);
+            if(IsCipher(chTemp))
+            {
+
+            }
+        }
     }
+}
+
+//TODO 判断传进来的是否是有效密码
+int IsCipher(char characCipherContent[])
+{
+
 }
 
 int main(int argc, char **argv) {
@@ -35,5 +49,3 @@ int main(int argc, char **argv) {
     cout << val << endl;
     return 0;
 }
-
-
