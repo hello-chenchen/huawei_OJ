@@ -1,7 +1,7 @@
 /*
  * common.h
  *
- *  Created on: 2017Äê5ÔÂ26ÈÕ
+ *  Created on: 2017.5.26
  *      Author: hello_chenchen
  */
 

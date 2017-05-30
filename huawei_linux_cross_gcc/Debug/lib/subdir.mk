@@ -4,19 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CC_SRCS += \
-../src/decode.cc 
+../lib/stringlib.cc 
 
 CC_DEPS += \
-./src/decode.d 
+./lib/stringlib.d 
 
 OBJS += \
-./src/decode.o 
+./lib/stringlib.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/%.o: ../src/%.cc
+lib/%.o: ../lib/%.cc
 	@echo 'Building file: $<'
-	@echo 'Invoking: Cygwin C++ Compiler'
+	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
