@@ -10,17 +10,34 @@
 namespace CC_lib
 {
 
-//stringlib::stringlib()
+stringlib::stringlib()
+{
+    // TODO Auto-generated constructor stub
+
+}
+
+stringlib::~stringlib()
+{
+    // TODO Auto-generated destructor stub
+}
+
+//template<typename Container>
+//Container& CC_lib::stringlib::split(Container& result,
+//        const typename Container::value_type& s,
+//        typename Container::value_type::value_type delimiter,
+//        splitStruct::empties_t empties)
 //{
-//    // TODO Auto-generated constructor stub
-//
+//        result.clear();
+//        std::istringstream ss( s );
+//        while (!ss.eof())
+//        {
+//        typename Container::value_type field;
+//        getline( ss, field, delimiter );
+//        if ((empties == splitStruct::no_empties) && field.empty()) continue;
+//        result.push_back( field );
+//        }
+//        return result;
 //}
-//
-//stringlib::~stringlib()
-//{
-//    // TODO Auto-generated destructor stub
-//}
-//
 //template<typename Container>
 //Container& stringlib::split(Container& result,
 //        const typename Container::value_type& s,
